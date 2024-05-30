@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Правим конфигурационный файл GitLab
-sudo sed -i "s|external_url 'http://localhost'|external_url 'http://ip_address'|g" /etc/gitlab/gitlab.rb
+sudo sed -i "s|external_url 'http://localhost'|external_url 'http://158.160.170.158'|g" /etc/gitlab/gitlab.rb
 sudo sed -i "s|# gitlab_rails['initial_root_password'] = 'password'|gitlab_rails['initial_root_password'] = 'toortoor'|g" /etc/gitlab/gitlab.rb
 sudo sed -i "s|# gitlab_rails['initial_shared_runners_registration_token'] = 'token'|gitlab_rails['initial_shared_runners_registration_token'] = 'toortoor'|g" /etc/gitlab/gitlab.rb
 sudo sed -i "s|# gitlab_rails['store_initial_root_password'] = nil|gitlab_rails['store_initial_root_password'] = true|g" /etc/gitlab/gitlab.rb
